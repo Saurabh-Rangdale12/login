@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../z"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "n"
+	}
+}
