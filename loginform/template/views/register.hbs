@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>City Weather</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" ;>
@@ -19,67 +19,42 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-warning bg-gradient">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <h2 style="color: white;">WaterBalls</h2>
-            </a>
-            <!--heading website-->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/" style="color: white;">Home</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="/login" style="color: white;">Login</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="/register" style="color: white;">Register</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+  {{>navbar}}
     
     <div class="box">
         <div class="justout">
             <div class="title">Registration Form</div>
-            <form action="#" class="fom">
+            <form action="/register" method="POST" class="fom">
                 <div class="in_form">
                     <div class="user-details">
                         <div class="inner name_user">
                             <div class="input-box">
                                 <span class="details">Full Name</span>
-                                <input type="text" placeholder="Enter Your Name" required>
+                                <input type="text" name="fullname" placeholder="Enter Your Full Name" required>
                             </div>
                             <div class="input-box">
                                 <span class="details">UserName</span>
-                                <input type="text" placeholder="Enter Your Name" required>
+                                <input type="text" name="username" placeholder="Enter User Name" required>
                             </div>
                         </div>
                         <div class="inner email_num">
                             <div class="input-box">
                                 <span class="details">Email</span>
-                                <input type="text" placeholder="Enter Your Name" required>
+                                <input type="text" name="email" placeholder="Enter Your Email" required>
                             </div>
                             <div class="input-box">
                                 <span class="details">Phone Number</span>
-                                <input type="text" placeholder="Enter Your Name" required>
+                                <input type="text" name="phone" placeholder="Enter Your Name" required>
                             </div>
                         </div>
                         <div class="inner pass_confirm">
                             <div class="input-box">
                                 <span class="details">Password</span>
-                                <input type="text" placeholder="Enter Your Name" required>
+                                <input type="text" name="pswd" placeholder="Enter Your Name" >
                             </div>
                             <div class="input-box">
                                 <span class="details">Confirm Password</span>
-                                <input type="text" placeholder="Enter Your Name" required>
+                                <input type="text" name="conpswd" placeholder="Enter Your Name">
                             </div>
                         </div>
                     </div>
